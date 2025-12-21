@@ -7,8 +7,8 @@ export function ThemeProvider({children}){
         setTheme(theme==="light"? "dark":"light");
     };
     return (
-        <ThemeContext.provider value={{theme,toggleTheme}}>
+        <ThemeContext.Provider value={{theme,toggleTheme}}>
             {children}
-        </ThemeContext.provider>
+        </ThemeContext.Provider>
     );
 }
