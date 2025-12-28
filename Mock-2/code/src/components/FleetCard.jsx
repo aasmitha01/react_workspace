@@ -8,7 +8,7 @@ const FleetCard=React.memo(
             <p>Driver:{fleet.driver}</p>
             <p>Status:{fleet.available}</p>
             <button onClick={()=>updateDriver(fleet.id)}>Update Driver</button>
-            <button on onClick={()=>toggleAvailability(fleet.id)}>Toggle Status</button>
+            <button onClick={()=>toggleAvailability(fleet.id)}>Toggle Status</button>
             <button onClick={()=>deleteFleet(fleet.id)}>Delete</button>
         </div>
     );

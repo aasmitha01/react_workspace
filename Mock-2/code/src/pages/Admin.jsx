@@ -2,14 +2,14 @@ import { useState,useCallback } from "react";
 import FleetCard from "../components/FleetCard";
 function Admin(){
     const [fleets,setFleets]=useState([]);
-    Const [form,setForm]=useState({
+    const [form,setForm]=useState({
         regNo:"",
         category:"",
         driver:"",
         available:"Available",
     });
 const handleChange=(e)=>{
-    setForm({...Form,[e.target.name]:e.target.value});
+    setForm({...form,[e.target.name]:e.target.value});
 
 };
 const addFleet=()=>{
